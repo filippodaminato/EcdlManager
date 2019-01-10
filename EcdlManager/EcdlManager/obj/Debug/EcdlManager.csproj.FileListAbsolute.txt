@@ -1,0 +1,15 @@
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\EcdlManager.exe.config
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\EcdlManager.exe
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\EcdlManager.pdb
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\Google.Protobuf.dll
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\MySql.Data.dll
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\Google.Protobuf.xml
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\MySql.Data.xml
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.csprojAssemblyReference.cache
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Form1.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Properties.Resources.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.csproj.GenerateResource.cache
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.csproj.CoreCompileInputs.cache
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.csproj.CopyComplete
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.exe
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.pdb
