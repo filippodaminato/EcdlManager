@@ -13,3 +13,8 @@ C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlMana
 C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.csproj.CopyComplete
 C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.exe
 C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.pdb
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.EsaminandoForm.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.SessioneForm.resources

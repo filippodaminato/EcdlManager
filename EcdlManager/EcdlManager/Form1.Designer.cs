@@ -36,16 +36,22 @@
             this.btnSkillCard = new System.Windows.Forms.Button();
             this.btnSessione = new System.Windows.Forms.Button();
             this.btnPartecipazione = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnChange = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(1, 174);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1580, 836);
+            this.dataGridView1.Size = new System.Drawing.Size(1156, 836);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnEsaminando
@@ -118,11 +124,47 @@
             this.btnPartecipazione.UseVisualStyleBackColor = true;
             this.btnPartecipazione.Click += new System.EventHandler(this.TableBtn_Click);
             // 
+            // btnCreate
+            // 
+            this.btnCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCreate.Location = new System.Drawing.Point(1215, 286);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(143, 117);
+            this.btnCreate.TabIndex = 8;
+            this.btnCreate.Text = "Crea";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.TableBtn_Action);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Location = new System.Drawing.Point(1215, 610);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(143, 117);
+            this.btnDelete.TabIndex = 9;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.TableBtn_Action);
+            // 
+            // btnChange
+            // 
+            this.btnChange.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnChange.Location = new System.Drawing.Point(1215, 442);
+            this.btnChange.Name = "btnChange";
+            this.btnChange.Size = new System.Drawing.Size(143, 117);
+            this.btnChange.TabIndex = 10;
+            this.btnChange.Text = "Change";
+            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.Click += new System.EventHandler(this.TableBtn_Action);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1980, 1010);
+            this.ClientSize = new System.Drawing.Size(1408, 1010);
+            this.Controls.Add(this.btnChange);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnPartecipazione);
             this.Controls.Add(this.btnSessione);
             this.Controls.Add(this.btnSkillCard);
@@ -149,6 +191,9 @@
         private System.Windows.Forms.Button btnSkillCard;
         private System.Windows.Forms.Button btnSessione;
         private System.Windows.Forms.Button btnPartecipazione;
+        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnChange;
     }
 }
 

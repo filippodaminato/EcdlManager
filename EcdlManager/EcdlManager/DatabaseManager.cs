@@ -11,6 +11,7 @@ namespace EcdlManager
     public static class DatabaseManager
     {
         static MySqlConnection database;
+
         public static void connection(string credentials)
         {
             database = new MySqlConnection(credentials);
