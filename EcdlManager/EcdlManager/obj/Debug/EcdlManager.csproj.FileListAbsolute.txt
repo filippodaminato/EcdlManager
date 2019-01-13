@@ -18,3 +18,8 @@ C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\Newtonso
 C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\bin\Debug\Newtonsoft.Json.xml
 C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.EsaminandoForm.resources
 C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.SessioneForm.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.SkillCardForm.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.AulaForm.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.TipoEsameForm.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.EsameForm.resources
+C:\Users\filippodaminato\source\repos\EcdlManager\EcdlManager\obj\Debug\EcdlManager.Forms.ParteciapzioneForm.resources

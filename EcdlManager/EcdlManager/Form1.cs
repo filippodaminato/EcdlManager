@@ -25,18 +25,13 @@ namespace EcdlManager
         private void Form1_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = DatabaseManager.get("SELECT * FROM esaminando").Tables[0];
-
-            //DataRow c = asd.Tables[0].Rows[0];
-            //Esaminando a = new Esaminando(c);
         }
 
         private void TableBtn_Click(object sender,EventArgs e)
         {
             Button _btn = (Button)sender;
             currentPage = _btn.Text.ToLower().Trim(' ').Replace(" ",String.Empty);
-            updateGrid(currentPage);
-            
-            
+            updateGrid(currentPage);      
         }
 
         private void updateGrid(string topic)
@@ -94,18 +89,28 @@ namespace EcdlManager
                     action1.ShowDialog();
                     break;
                 case "esame":
+                    EsameForm esm = new EsameForm();
+                    esm.ShowDialog();
                     break;
                 case "skillcard":
+                    SkillCardForm skl = new SkillCardForm();
+                    skl.ShowDialog();
                     break;
                 case "sessione":
                     SessioneForm ses = new SessioneForm();
                     ses.ShowDialog();
                     break;
                 case "aula":
+                    AulaForm aul = new AulaForm();
+                    aul.ShowDialog();
                     break;
                 case "partecipazione":
+                    ParteciapzioneForm part = new ParteciapzioneForm();
+                    part.ShowDialog();
                     break;
                 case "tipoesame":
+                    TipoEsameForm tpes = new TipoEsameForm();
+                    tpes.ShowDialog();
                     break;
             }
 
@@ -117,9 +122,13 @@ namespace EcdlManager
         {
             if (dataGridView1.SelectedRows.Count != 1)
             {
-                
 
-                
+                MessageBox.Show("Devi selezionare massimo/minimo una riga!",
+                                "Errore",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error,
+                                MessageBoxDefaultButton.Button1);
+
             }
             else
             {
@@ -136,18 +145,28 @@ namespace EcdlManager
                         action2.ShowDialog();
                         break;
                     case "esame":
+                        EsameForm esm = new EsameForm(values);
+                        esm.ShowDialog();
                         break;
                     case "skillcard":
+                        SkillCardForm skl = new SkillCardForm(values);
+                        skl.ShowDialog();
                         break;
                     case "sessione":
                         SessioneForm ses = new SessioneForm(values);
                         ses.ShowDialog();
                         break;
                     case "aula":
+                        AulaForm aul = new AulaForm(values);
+                        aul.ShowDialog();
                         break;
                     case "partecipazione":
+                        ParteciapzioneForm part = new ParteciapzioneForm(values);
+                        part.ShowDialog();
                         break;
                     case "tipoesame":
+                        TipoEsameForm tpes = new TipoEsameForm(values);
+                        tpes.ShowDialog();
                         break;
                 }
 
@@ -164,8 +183,11 @@ namespace EcdlManager
 
             if (dataGridView1.SelectedRows.Count != 1)
             {
-
-                
+                MessageBox.Show("Devi selezionare massimo/minimo una riga!",
+                                "Errore",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error,
+                                MessageBoxDefaultButton.Button1);
             }
             else
             {
@@ -178,17 +200,22 @@ namespace EcdlManager
                         query = "DELETE FROM esaminando WHERE CFEsaminando ='"+PK+"'";
                         break;
                     case "esame":
+                        query = "DELETE FROM esame WHERE IDEsame =" + PK;
                         break;
                     case "skillcard":
+                        query = "DELETE FROM skillcard WHERE IDSkillCard =" + PK ;
                         break;
                     case "sessione":
                         query = "DELETE FROM sessione WHERE IDSessione="+PK;
                         break;
                     case "aula":
+                        query = "DELETE FROM aula WHERE IDAula=" + PK;
                         break;
                     case "partecipazione":
+                        query = "DELETE FROM partecipazione WHERE IDParteciapzione =" + PK;
                         break;
                     case "tipoesame":
+                        query = "DELETE FROM tipoesame WHERE IDTipoEsame=" + PK;
                         break;
                 }
 

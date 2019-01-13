@@ -46,16 +46,19 @@ namespace EcdlManager.Forms
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            if(createCommand)
+            if (checkData())
             {
-                create();
-            }
-            else
-            {
-                change();
-            }
+                if (createCommand)
+                {
+                    create();
+                }
+                else
+                {
+                    change();
+                }
 
-            this.Close();
+                this.Close();
+            }
         }
 
         private void change()
@@ -70,13 +73,30 @@ namespace EcdlManager.Forms
 
         private void create()
         {
+            string date = dateTimePicker1.Value.ToString().Split(' ')[0];
             string query = @"INSERT INTO esaminando ( CFEsaminando, Nome, Cognome, Sesso, DataNascita, LuogoNascita, BoolStudente )
-                            VALUES ('"+textBox3.Text+"','"+ textBox1.Text + "','" + textBox2.Text + "','" + comboBox1.Text + "','" + dateTimePicker1.Value.ToShortDateString() + "','" + textBox6.Text+"','S')";
+                            VALUES ('"+textBox3.Text+"','"+ textBox1.Text + "','" + textBox2.Text + "','" + comboBox1.Text + "','" + date + "','" + textBox6.Text+"','S')";
             DatabaseManager.post(query);
             DatabaseManager.disconnect();
         }
 
-        
+        private bool checkData()
+        {
+            if (textBox1.Text.Trim(' ') == "" || textBox2.Text.Trim(' ') == ""|| textBox3.Text.Trim(' ') == "" || textBox6.Text.Trim(' ') == "" || comboBox1.Text == "")
+            {
+                MessageBox.Show("I campi non sono stati compilati correttamente!",
+                                "Errore",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error,
+                                MessageBoxDefaultButton.Button1);
+                return false;
+            }
+
+            return true;
+
+        }
+
+
 
     }
 }

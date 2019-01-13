@@ -51,7 +51,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(1, 174);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1156, 836);
+            this.dataGridView1.Size = new System.Drawing.Size(1158, 836);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnEsaminando
@@ -127,7 +127,7 @@
             // btnCreate
             // 
             this.btnCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCreate.Location = new System.Drawing.Point(1215, 286);
+            this.btnCreate.Location = new System.Drawing.Point(1217, 286);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(143, 117);
             this.btnCreate.TabIndex = 8;
@@ -138,7 +138,7 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.Location = new System.Drawing.Point(1215, 610);
+            this.btnDelete.Location = new System.Drawing.Point(1217, 610);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(143, 117);
             this.btnDelete.TabIndex = 9;
@@ -149,7 +149,7 @@
             // btnChange
             // 
             this.btnChange.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnChange.Location = new System.Drawing.Point(1215, 442);
+            this.btnChange.Location = new System.Drawing.Point(1217, 442);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(143, 117);
             this.btnChange.TabIndex = 10;
@@ -161,7 +161,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1408, 1010);
+            this.ClientSize = new System.Drawing.Size(1410, 1010);
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnCreate);

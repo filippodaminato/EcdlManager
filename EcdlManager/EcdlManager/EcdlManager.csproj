@@ -70,11 +70,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AulaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AulaForm.Designer.cs">
+      <DependentUpon>AulaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EsameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EsameForm.Designer.cs">
+      <DependentUpon>EsameForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EsaminandoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\EsaminandoForm.Designer.cs">
       <DependentUpon>EsaminandoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ParteciapzioneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParteciapzioneForm.Designer.cs">
+      <DependentUpon>ParteciapzioneForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SessioneForm.cs">
       <SubType>Form</SubType>
@@ -82,16 +100,43 @@
     <Compile Include="Forms\SessioneForm.Designer.cs">
       <DependentUpon>SessioneForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SkillCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SkillCardForm.Designer.cs">
+      <DependentUpon>SkillCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TipoEsameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TipoEsameForm.Designer.cs">
+      <DependentUpon>TipoEsameForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AulaForm.resx">
+      <DependentUpon>AulaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EsameForm.resx">
+      <DependentUpon>EsameForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EsaminandoForm.resx">
       <DependentUpon>EsaminandoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParteciapzioneForm.resx">
+      <DependentUpon>ParteciapzioneForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SessioneForm.resx">
       <DependentUpon>SessioneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SkillCardForm.resx">
+      <DependentUpon>SkillCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TipoEsameForm.resx">
+      <DependentUpon>TipoEsameForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
