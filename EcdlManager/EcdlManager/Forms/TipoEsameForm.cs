@@ -14,9 +14,11 @@ namespace EcdlManager.Forms
     {
         bool createCommand = true;
         string PK;
+        
         public TipoEsameForm()
         {
             InitializeComponent();
+            btnConfirm.Image = Image.FromFile(@"debug/btnConfirm");
         }
 
         public TipoEsameForm(List<string> values)
@@ -37,7 +39,7 @@ namespace EcdlManager.Forms
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
-        {
+        {            
             if (checkContent())
             {
                 if (createCommand)
