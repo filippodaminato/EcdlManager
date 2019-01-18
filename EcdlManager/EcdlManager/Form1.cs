@@ -191,37 +191,50 @@ namespace EcdlManager
             }
             else
             {
-                string query = "";
-                string PK = Convert.ToString(dataGridView1.SelectedRows[0].Cells[0].FormattedValue);
-
-                switch (currentPage)
+                try
                 {
-                    case "esaminando":
-                        query = "DELETE FROM esaminando WHERE CFEsaminando ='"+PK+"'";
-                        break;
-                    case "esame":
-                        query = "DELETE FROM esame WHERE IDEsame =" + PK;
-                        break;
-                    case "skillcard":
-                        query = "DELETE FROM skillcard WHERE IDSkillCard =" + PK ;
-                        break;
-                    case "sessione":
-                        query = "DELETE FROM sessione WHERE IDSessione="+PK;
-                        break;
-                    case "aula":
-                        query = "DELETE FROM aula WHERE IDAula=" + PK;
-                        break;
-                    case "partecipazione":
-                        query = "DELETE FROM partecipazione WHERE IDParteciapzione =" + PK;
-                        break;
-                    case "tipoesame":
-                        query = "DELETE FROM tipoesame WHERE IDTipoEsame=" + PK;
-                        break;
-                }
+                    string query = "";
+                    string PK = Convert.ToString(dataGridView1.SelectedRows[0].Cells[0].FormattedValue);
 
-                DatabaseManager.post(query);
-                DatabaseManager.disconnect();
-                updateGrid(currentPage);
+                    switch (currentPage)
+                    {
+                        case "esaminando":
+                            query = "DELETE FROM esaminando WHERE CFEsaminando ='" + PK + "'";
+                            break;
+                        case "esame":
+                            query = "DELETE FROM esame WHERE IDEsame =" + PK;
+                            break;
+                        case "skillcard":
+                            query = "DELETE FROM skillcard WHERE IDSkillCard =" + PK;
+                            break;
+                        case "sessione":
+                            query = "DELETE FROM sessione WHERE IDSessione=" + PK;
+                            break;
+                        case "aula":
+                            query = "DELETE FROM aula WHERE IDAula=" + PK;
+                            break;
+                        case "partecipazione":
+                            query = "DELETE FROM partecipazione WHERE IDParteciapzione =" + PK;
+                            break;
+                        case "tipoesame":
+                            query = "DELETE FROM tipoesame WHERE IDTipoEsame=" + PK;
+                            break;
+                    }
+
+                    DatabaseManager.post(query);
+                    DatabaseManager.disconnect();
+                    updateGrid(currentPage);
+                }
+                catch
+                {
+                    MessageBox.Show("Questa tabella ha dei riferimenti",
+                                "Errore",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error,
+                                MessageBoxDefaultButton.Button1);
+                    DatabaseManager.disconnect();
+                }
+                
             }
         }
 
